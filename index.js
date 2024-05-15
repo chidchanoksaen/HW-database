@@ -23,9 +23,9 @@ const dbConn = mysql.createConnection({
 
 //  GET students
 
-// app.get('/students', async (req,res) => {
-//     res.sendFile(__dirname + "/submitInsert.html")
-// })
+app.get('/students', async (req,res) => {
+    res.sendFile(__dirname + "/submitInsert.html")
+})
 app.get("/", (req, res)=>{
     //res.send("Hello World");
     res.sendFile(__dirname + "/index.html")
