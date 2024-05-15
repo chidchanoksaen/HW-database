@@ -21,11 +21,6 @@ const dbConn = mysql.createConnection({
     port: 3306  // <== ใส่ port ให้ถูกต้อง (default 3306, MAMP ใช้ 8889)
 });
 
-//  GET students
-
-app.get('/students', async (req,res) => {
-    res.sendFile(__dirname + "/submitInsert.html")
-})
 app.get("/", (req, res)=>{
     //res.send("Hello World");
     res.sendFile(__dirname + "/index.html")
